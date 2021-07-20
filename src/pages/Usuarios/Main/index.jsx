@@ -58,8 +58,24 @@ export default function MainUsuarios() {
                     <tbody>    
                         <tr>
                             <td>Elvis Presley</td>
-                            <td>telvis</td>
+                            <td>elvis.presley</td>
                             <td>Administrador</td>
+                            <td><Link to={`/detalhesTime`}>Ver</Link></td>
+                            <td>15/07/2021</td>
+                            <td><Link to={`/detalhesUsuario`}>Detalhes</Link></td>
+                        </tr>
+                        <tr>
+                            <td>Roberto Carlos</td>
+                            <td>roberto.carlos</td>
+                            <td>Administrador</td>
+                            <td><Link to={`/detalhesTime`}>Ver</Link></td>
+                            <td>15/07/2021</td>
+                            <td><Link to={`/detalhesUsuario`}>Detalhes</Link></td>
+                        </tr>
+                        <tr>
+                            <td>Maria das Graças</td>
+                            <td>maria.xuxa</td>
+                            <td>Administradora</td>
                             <td><Link to={`/detalhesTime`}>Ver</Link></td>
                             <td>15/07/2021</td>
                             <td><Link to={`/detalhesUsuario`}>Detalhes</Link></td>
@@ -81,7 +97,7 @@ export default function MainUsuarios() {
                             <td><Link to={`/detalhesUsuario`}>Detalhes</Link></td>
                         </tr>
                         <tr>
-                            <td>anitta da Silva</td>
+                            <td>Anitta da Silva</td>
                             <td>anitta.silva</td>
                             <td>Colaboradora</td>
                             <td><Link to={`/detalhesTime`}>Ver</Link></td>

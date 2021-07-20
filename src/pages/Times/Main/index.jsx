@@ -52,33 +52,29 @@ export default function MainTimes() {
                     <tbody>
                         <tr>
                             <td>Administradores</td>
-                            <td><Link to={`/inserirUsuario`}>Adicionar Usuário</Link></td>
-                            <td><Link to={`/detalhesTime`}>Detalhes do Time</Link></td>
-                            <td><Link to={`/editarTime`}>Editar</Link></td>
-                            <td><Link to={`/excluirTime`}>Excluir</Link></td>
+                            <td><Link to={`/inserirUsuario/1`}>Adicionar Usuário</Link></td>
+                            <td><Link to={`/detalhesTime/1`}>Detalhes do Time</Link></td>
+                            <td><Link to={`/editarTime/1`}>Editar</Link></td>
+                            <td><Link to={`/excluirTime/1`}>Excluir</Link></td>
                         </tr>
                         <tr>
                             <td>Time Pop</td>
-                            <td><Link to={`/inserirUsuario`}>Adicionar Usuário</Link></td>
-                            <td><Link to={`/detalhesTime`}>Detalhes do Time</Link></td>
-                            <td><Link to={`/editarTime`}>Editar</Link></td>
-                            <td><Link to={`/excluirTime`}>Excluir</Link></td>
+                            <td><Link to={`/inserirUsuario/2`}>Adicionar Usuário</Link></td>
+                            <td><Link to={`/detalhesTime/2`}>Detalhes do Time</Link></td>
+                            <td><Link to={`/editarTime/2`}>Editar</Link></td>
+                            <td><Link to={`/excluirTime/2`}>Excluir</Link></td>
                         </tr>
                         <tr>
                             <td>Time MPB</td>
-                            <td><Link to={`/inserirUsuario`}>Adicionar Usuário</Link></td>
-                            <td><Link to={`/detalhesTime`}>Detalhes do Time</Link></td>
-                            <td><Link to={`/editarTime`}>Editar</Link></td>
-                            <td><Link to={`/excluirTime`}>Excluir</Link></td>
+                            <td><Link to={`/inserirUsuario/3`}>Adicionar Usuário</Link></td>
+                            <td><Link to={`/detalhesTime/3`}>Detalhes do Time</Link></td>
+                            <td><Link to={`/editarTime/3`}>Editar</Link></td>
+                            <td><Link to={`/excluirTime/3`}>Excluir</Link></td>
                         </tr>
-
-
-
-                        
                     </tbody>
                 </table>
             </div>
-            <p className="mt-3"><Link>Voltar</Link></p>
+            <p className="mt-3"><Link to={`/admin`}>Voltar</Link></p>
         </>
     )
 }

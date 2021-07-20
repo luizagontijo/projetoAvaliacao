@@ -1,0 +1,69 @@
+arrumar responsividade:
+login
+dashboard
+times
+	principal
+	adicionar
+	detalhes
+	editar
+	excluir
+usuarios
+	principal
+	adicionar
+	detalhes
+	editar
+	excluir
+formularios
+	principal
+	adicionar
+	detalhes
+	editar
+	excluir
+perguntas
+	principal
+	adicionar
+	detalhes
+	editar
+	excluir
+
+X mudar kayque ryan
+
+X colocar mais dois adm pra dar 11 usuarios
+	links
+
+X colocar os times pra ver os formularios
+	links
+
+fazer os formularios
+	fazer pro time Pop
+	fazer pro MPB
+	links
+
+fazer as perguntas
+	Pop - g/c
+	Pop - pares
+	Pop - auto
+	MPB - g/c
+	MPB - pares
+	MPB - auto
+	links
+
+paginas de detalhes times
+	Administradores
+	Pop
+	MPB
+	links
+
+paginas de detalhes usuarios
+	Elvis Presley	
+	Roberto Carlos
+	Marias das Graças
+	Sandy Junior
+	Tiago Iorc
+	anitta da Silva
+	Tim Maia	
+	Maria Bethânia	
+	Caetano Veloso	
+	Chico Buarque	
+	Elis Regina
+	links

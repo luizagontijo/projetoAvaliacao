@@ -1,33 +1,33 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function FormulariosPorTime(props) {
-    const [formularios, setFormularios] = useState([]);
-    const [time, setTime] = useState([]);
+    // const [formularios, setFormularios] = useState([]);
+    // const [time, setTime] = useState([]);
 
-    useEffect(
-        () => {
-            const { id } = props.match.params;
-            console.log(id)
-            axios.get(`${process.env.REACT_APP_HOST_URL}/globalhitss/formsTime/${id}`)
-                .then(
-                    (res) => {
-                        const get = res.data;
-                        const formularios = Object.assign(get);
-                        setTime(formularios)
-                        setFormularios(formularios.forms)
-                    }
-                )
-        }, [props.match.params]
-    );
+    // useEffect(
+    //     () => {
+    //         const { id } = props.match.params;
+    //         console.log(id)
+    //         axios.get(`${process.env.REACT_APP_HOST_URL}/globalhitss/formsTime/${id}`)
+    //             .then(
+    //                 (res) => {
+    //                     const get = res.data;
+    //                     const formularios = Object.assign(get);
+    //                     setTime(formularios)
+    //                     setFormularios(formularios.forms)
+    //                 }
+    //             )
+    //     }, [props.match.params]
+    // );
 
     return (
         <>
-            <h3>Formulários de {time.nome}</h3>
-            <Link to={`/inserirFormulario/${time.id}`}>Adicionar</Link>            
+            <h3>Formulários do time ...</h3>
+            <Link to={`/inserirFormulario`}>Adicionar</Link>
 
-            <div className=" d-flex">
+            {/* <div className=" d-flex">
                 {
                     formularios.length > 0 ? (
                         formularios.map(
@@ -53,8 +53,56 @@ export default function FormulariosPorTime(props) {
                         </tr>
                     )
                 }
+            </div> */}
+
+            <div className=" d-flex">
+                <div className="formIndividual m-1 rounded shadow-lg">
+                    <div className="text-center p-5">
+                        <div className="text" >
+                            <h5 className="tipoform"><strong>Formulário para</strong></h5>
+                            <h5 className="tipoform"><strong>Gestor-Colaborador</strong></h5>
+                            <div className="formBotoes">
+                                <p className="liteste mb-3"><Link to={`/inserirPergunta`} >Cadastrar Pergunta</Link></p>
+                                <p className="liteste mb-3"><Link to={`/perguntasFormulario`}>Ver Perguntas</Link></p>
+                                <p className="liteste mb-3"><Link to={`/editarFormulario`}>Editar</Link></p>
+                                <p className="liteste mb-3"><Link to={`/excluirFormulario`}>Excluir</Link></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="formIndividual m-1 rounded shadow-lg">
+                    <div className="text-center p-5">
+                        <div className="text" >
+                            <h5 className="tipoform"><strong>Formulário para</strong></h5>
+                            <h5 className="tipoform"><strong>Avaliação de Pares</strong></h5>
+                            <div className="formBotoes">
+                                <p className="liteste mb-3"><Link to={`/inserirPergunta`} >Cadastrar Pergunta</Link></p>
+                                <p className="liteste mb-3"><Link to={`/perguntasFormulario`}>Ver Perguntas</Link></p>
+                                <p className="liteste mb-3"><Link to={`/editarFormulario`}>Editar</Link></p>
+                                <p className="liteste mb-3"><Link to={`/excluirFormulario`}>Excluir</Link></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="formIndividual m-1 rounded shadow-lg">
+                    <div className="text-center p-5">
+                        <div className="text" >
+                            <h5 className="tipoform"><strong>Formulário para</strong></h5>
+                            <h5 className="tipoform"><strong>Autoavaliação</strong></h5>
+                            <div className="formBotoes">
+                                <p className="liteste mb-3"><Link to={`/inserirPergunta`} >Cadastrar Pergunta</Link></p>
+                                <p className="liteste mb-3"><Link to={`/perguntasFormulario`}>Ver Perguntas</Link></p>
+                                <p className="liteste mb-3"><Link to={`/editarFormulario`}>Editar</Link></p>
+                                <p className="liteste mb-3"><Link to={`/excluirFormulario`}>Excluir</Link></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p><Link to={`/detalhesTime/${formularios.id}`}>Voltar</Link></p>
+
+            <p><Link to={`/detalhesTime`}>Voltar</Link></p>
 
         </>
     )

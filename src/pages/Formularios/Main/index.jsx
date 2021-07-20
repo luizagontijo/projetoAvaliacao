@@ -1,38 +1,38 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
-export default function MainFormularios (props) {
-    const [state, setState] = useState({
-        times: []
-    });
+export default function MainFormularios(props) {
+    // const [state, setState] = useState({
+    //     times: []
+    // });
 
-    useEffect(
-        () => {
-            axios.get(`${process.env.REACT_APP_HOST_URL}/globalhitss/times`)
-                .then(
-                    res => {
-                        const times = res.data;
-                        setState({ times })
-                    }
-                )
-        }, []
-    )
+    // useEffect(
+    //     () => {
+    //         axios.get(`${process.env.REACT_APP_HOST_URL}/globalhitss/times`)
+    //             .then(
+    //                 res => {
+    //                     const times = res.data;
+    //                     setState({ times })
+    //                 }
+    //             )
+    //     }, []
+    // )
 
-    const { times } = state;
+    // const { times } = state;
     return (
         <>
             <h3>Formulários por Time</h3>
-            
+
             <div className="row mt-3 p-3 justify-content-between rounded shadow">
-            <table className="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Mais Informações</th>
-                    </tr>
-                </thead>
-                <tbody>
+                <table className="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome do Time</th>
+                            <th>Mais Informações</th>
+                        </tr>
+                    </thead>
+                    {/* <tbody>
                     {
                         times.map(
 
@@ -45,10 +45,18 @@ export default function MainFormularios (props) {
                             )
                         )
                     }
-
-
-                </tbody>
-            </table>
+                </tbody> */}
+                    <tbody>
+                        <tr>
+                            <td>Time Pop</td>
+                            <td><Link to={`/formulariosTime`}>ver formulários</Link></td>
+                        </tr>
+                        <tr>
+                            <td>Time MPB</td>
+                            <td><Link to={`/formulariosTime`}>ver formulários</Link></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <p className="mt-3"><Link>Voltar</Link></p>
         </>

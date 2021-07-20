@@ -66,7 +66,7 @@ return (
                 <div className="dashTres col-md-4 pt-4 text-center rounded shadow">
                     <FaUserTie size={70} />
                     <p className="pt-3 small mb-0">Bem vindo</p>
-                    <p className=" ">Kaique Ryan</p>
+                    <p className=" ">Elvis Presley</p>
                 </div>
 
                 <Link to='/times' className="dashTres col-md-4 py-4 rounded shadow">
