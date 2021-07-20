@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './index.css';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo3.png';
 // import { Link } from 'react-router-dom';
 
 function LoginForm({ Login, error }) {
@@ -15,7 +15,7 @@ function LoginForm({ Login, error }) {
     return (
         <div className="tudo">
             <div className="cartao">
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo} id="logo" className="App-logo" alt="logo" />
             </div>
             {/*<form onSubmit={submitHandler}>*/}
 

@@ -11,6 +11,10 @@ body {
     justify-content: center;
 }
 
+#logo {
+    width: 50%;
+}
+
 .cartao {
     background-color: #ffff;
     display: flex;

@@ -80,11 +80,14 @@ export default function MainUsuarios() {
                             <td>19/07/2021</td>
                             <td><Link to={`/detalhesUsuario`}>Detalhes</Link></td>
                         </tr>
-
-
-
-
-
+                        <tr>
+                            <td>anitta da Silva</td>
+                            <td>anitta.silva</td>
+                            <td>Colaboradora</td>
+                            <td><Link to={`/detalhesTime`}>Ver</Link></td>
+                            <td>19/07/2021</td>
+                            <td><Link to={`/detalhesUsuario`}>Detalhes</Link></td>
+                        </tr>
                         <tr>
                             <td>Tim Maia</td>
                             <td>tim.maia</td>
