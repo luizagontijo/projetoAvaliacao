@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // import axios from 'axios';
 // import moment from 'moment';
 
-export default function DetalhesTime(props) {
+export default function DetalhesTime2(props) {
     // const [state, setState] = useState({
     //     time: []
     // });
@@ -53,16 +53,16 @@ export default function DetalhesTime(props) {
                     <tbody>
                         <tr>
                             <td>
-                                <p>Nome: Administradores</p>
-                                <p>Criado em: 15/07/2021</p>
-                                <p>Editado em: 15/07/2021</p>
+                                <p>Nome: Time Pop</p>
+                                <p>Criado em: 16/07/2021</p>
+                                <p>Editado em: 19/07/2021</p>
                             </td>
                             <td>
-                                <p><Link to={`/inserirUsuario/1`}>Adicionar Usuários</Link></p>
-                                <p><Link to={`/usuariosTime/1`}>Ver Usuários</Link></p>
-                                <p><Link to={`/formulariosTime/1`}>Ver Formulários</Link></p>
-                                <p><Link to={`/editarTime/1`}>Editar</Link></p>
-                                <p><Link to={`/excluirTime/1`}>Excluir</Link></p>
+                                <p><Link to={`/inserirUsuario/2`}>Adicionar Usuários</Link></p>
+                                <p><Link to={`/usuariosTime/2`}>Ver Usuários</Link></p>
+                                <p><Link to={`/formulariosTime/2`}>Ver Formulários</Link></p>
+                                <p><Link to={`/editarTime/2`}>Editar</Link></p>
+                                <p><Link to={`/excluirTime/2`}>Excluir</Link></p>
                             </td>
                         </tr>
                     </tbody>
